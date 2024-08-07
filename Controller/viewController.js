@@ -28,7 +28,7 @@ export const homePage = async (req,res) => {
 
     console.log(studentsMarks);
 
-    res.status(200).render('studentsMark',{
+    res.status(200).render('homepage',{
         studentsMarks
     });
 }
