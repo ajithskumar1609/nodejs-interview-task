@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students Marks</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <% studentsMarks.forEach(student => { %>
+                    <tr>
+                        <td><%= student.student_id %></td>
+                        <td><%= student.name %></td>
+                        <td><%= student.address %></td>
+                        <td><%= student.mark %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
